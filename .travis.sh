@@ -148,7 +148,7 @@ case "${1}" in
                 ;;
         esac
 
-        CONFIGURE_FLAGS="--disable-external"
+        CONFIGURE_FLAGS="--disable-external --enable-csc --enable-doboz"
         case "${BUILD_TYPE}" in
             "release")
                 CONFIGURE_FLAGS="${CONFIGURE_FLAGS} --disable-debug"
